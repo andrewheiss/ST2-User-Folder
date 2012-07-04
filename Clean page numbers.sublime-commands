@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Clean Skim page numbers",
+        "command": "clean_numbers"
+    }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>---
+layout: ${1:post}
+title: ${2:Post title}
+excerpt: ${3:Post excerpt}
+tags:
+- ${4:Post tags}
+---
+
+$0</string>
+	<key>name</key>
+	<string>Jekyll YAML Frontmatter</string>
+	<key>tabTrigger</key>
+	<string>jekyaml</string>
+	<key>uuid</key>
+	<string>7C1F4425-E0E1-485F-806C-4B3D5EE9D2AC</string>
+</dict>
+</plist>

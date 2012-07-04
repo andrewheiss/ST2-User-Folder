@@ -1,0 +1,14 @@
+{
+	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"font_face": "Consolas",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage",
+		"SublimeCodeIntel",
+		"BracketHighlighter"
+	],
+	"soda_classic_tabs": true,
+	"theme": "Soda Dark.sublime-theme",
+	"word_wrap": "true"
+}

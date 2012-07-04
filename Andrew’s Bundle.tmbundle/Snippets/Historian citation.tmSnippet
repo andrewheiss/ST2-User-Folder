@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\autocites${1:[$2]}${3:[$4]}{$5}$0</string>
+	<key>name</key>
+	<string>Historian citation</string>
+	<key>scope</key>
+	<string>text.tex.latex</string>
+	<key>tabTrigger</key>
+	<string>\cite</string>
+	<key>uuid</key>
+	<string>74F54437-7011-49C6-B9ED-DEF6CD02DDAE</string>
+</dict>
+</plist>

@@ -1,0 +1,15 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore cache files
+*.cache
+
+# Ignore Sublime Text 2 project files
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Mac Desktop Services files
+.DS_Store
+
+# Ignore Gist settings file, since it stores passwords in plain text (boo!)
+Gist.sublime-settings

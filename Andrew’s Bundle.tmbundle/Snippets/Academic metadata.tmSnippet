@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Title:				${1:Title}  
+Short title:		${1:Title}  
+Author:				${TM_FULLNAME}  
+Date:				${2:`date "+%B %d, %Y"`}  
+Class:				${3:Class}  
+Teacher:			${4:Teacher}  
+Bibliography: 		${5:Bibliography}.bib  
+Bibliographytitle:	${6:Works Cited}  
+Base Header Level:	3  
+LaTeX XSLT: 		historian.xslt
+
+$0</string>
+	<key>name</key>
+	<string>Academic metadata</string>
+	<key>tabTrigger</key>
+	<string>acadhead</string>
+	<key>uuid</key>
+	<string>A2638C35-8920-439C-B5C0-C69503EF42D7</string>
+</dict>
+</plist>
