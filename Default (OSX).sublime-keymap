@@ -20,14 +20,20 @@
 	
 	// R REPL stuff from http://tomschenkjr.net/2012/05/17/using-sublime-text-2-for-r/
 		// Executes line(s) of text in REPL terminal
-	{ "keys": ["super+shift+r"], "command": "repl_transfer_current", "args": {"scope": "lines"}, "context":
-			[
-				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
-			]
-	},
+	//{ "keys": ["super+shift+q"], "command": "repl_transfer_current", "args": {"scope": "lines"}, "context":
+	//		[
+	//			{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
+	//		]
+	//},
 
 	// Executes the entire file (build) in REPL
 	{ "keys": ["super+shift+alt+r"], "command": "repl_transfer_current", "args": {"scope": "file"}, "context":
+			[
+				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
+			]
+	}, 
+	// Purpose: This will execute the sent-to-R-new-line.sublime-macro file, which will send a selection of text through sublimeREPL and add a new line.
+	{ "keys": ["super+shift+r"], "command": "run_macro_file", "args": {"file": "Packages/User/R-send-command-move-next-line.sublime-macro"}, "context":
 			[
 				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
 			]

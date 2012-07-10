@@ -1,0 +1,17 @@
+[
+	{
+		"args":
+		{
+			"scope": "lines"
+		},
+		"command": "repl_transfer_current"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": true
+		},
+		"command": "move"
+	}
+]

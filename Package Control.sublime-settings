@@ -1,11 +1,12 @@
 {
-	"auto_upgrade_last_run": 1341894770,
+	"auto_upgrade_last_run": 1341950098,
 	"installed_packages":
 	[
 		"AAAPackageDev",
 		"Abacus",
 		"Alignment",
 		"Anypreter",
+		"Bullet",
 		"ColorPick",
 		"Default File Type",
 		"FileDiffs",
