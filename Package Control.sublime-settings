@@ -1,23 +1,24 @@
 {
-	"auto_upgrade_last_run": 1341379838,
+	"auto_upgrade_last_run": 1341894770,
 	"installed_packages":
 	[
 		"AAAPackageDev",
 		"Abacus",
 		"Alignment",
 		"Anypreter",
-		"BracketHighlighter",
 		"ColorPick",
 		"Default File Type",
 		"FileDiffs",
 		"Gist",
 		"Git",
+		"GitHub.app Menu",
 		"Markdown Preview",
 		"Package Control",
 		"R Tools",
 		"ScopeHunter",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
+		"SublimeREPL",
 		"SublimeTODO",
 		"Theme - Soda",
 		"ToggleQuotes"

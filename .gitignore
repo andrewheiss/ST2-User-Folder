@@ -13,3 +13,6 @@
 
 # Ignore Gist settings file, since it stores passwords in plain text (boo!)
 Gist.sublime-settings
+
+# Ignote SublimeREPL
+SublimeREPLHistory/

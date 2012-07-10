@@ -1,12 +1,6 @@
 [
 	{ "keys": ["ctrl+shift+backquote"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
-	{ "keys": ["alt+-"], "command": "insert_snippet", "args": {"name": "Packages/User/R-Assignment.sublime-snippet"}, "context":
-			[
-				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
-			]
-	},
-
 	{ "keys": ["ctrl+shift+space"], "command": "auto_complete" },
 	{ "keys": ["ctrl+shift+space"], "command": "replace_completion_with_auto_complete", "context":
 		[
@@ -14,5 +8,28 @@
 			{ "key": "auto_complete_visible", "operator": "equal", "operand": false },
 			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 		]
+	},
+
+	// R stuff
+	// alt+- to insert <-
+	{ "keys": ["alt+-"], "command": "insert_snippet", "args": {"name": "Packages/User/R-Assignment.sublime-snippet"}, "context":
+		[
+			{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
+		]
+	},
+	
+	// R REPL stuff from http://tomschenkjr.net/2012/05/17/using-sublime-text-2-for-r/
+		// Executes line(s) of text in REPL terminal
+	{ "keys": ["super+shift+r"], "command": "repl_transfer_current", "args": {"scope": "lines"}, "context":
+			[
+				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
+			]
+	},
+
+	// Executes the entire file (build) in REPL
+	{ "keys": ["super+shift+alt+r"], "command": "repl_transfer_current", "args": {"scope": "file"}, "context":
+			[
+				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
+			]
 	}
 ]
