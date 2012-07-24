@@ -1,14 +1,61 @@
 {
 	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.docx",
+		"*.xlsx",
+		"*.doc",
+		"*.xls"
+	],
 	"font_face": "Consolas",
 	"font_size": 13,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage",
-		"ScopeHunter",
 		"SublimeCodeIntel"
 	],
 	"soda_classic_tabs": true,
 	"theme": "Soda Dark.sublime-theme",
+	"todo":
+	{
+		"case_sensitive": true,
+		"file_exclude_patterns":
+		[
+			"*.css",
+			"*.po",
+			"*.mo"
+		],
+		"folder_exclude_patterns":
+		[
+			"static",
+			"vendor",
+			"tmp"
+		],
+		"patterns":
+		{
+			"BUG": "BUG[\\s]*?:+(?P<bug>.*)$"
+		},
+		"result_title": "TODO Results"
+	},
 	"word_wrap": "true"
 }
