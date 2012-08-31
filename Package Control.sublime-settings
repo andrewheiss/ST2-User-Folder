@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1343169492,
+	"auto_upgrade_last_run": 1346374609,
 	"installed_packages":
 	[
 		"AAAPackageDev",
@@ -14,7 +14,10 @@
 		"Git",
 		"GitHub.app Menu",
 		"Highlight",
+		"Inline Calculator",
+		"LaTeXTools",
 		"Markdown Preview",
+		"MarkdownEditing",
 		"Package Control",
 		"R Tools",
 		"ScopeHunter",

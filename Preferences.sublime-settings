@@ -32,8 +32,12 @@
 	"ignored_packages":
 	[
 		"Vintage",
-		"SublimeCodeIntel"
+		"SublimeCodeIntel",
+		"ScopeHunter",
+		"Bullet",
+		"Git"
 	],
+	"show_full_path": true,
 	"soda_classic_tabs": true,
 	"theme": "Soda Dark.sublime-theme",
 	"todo":
@@ -53,9 +57,11 @@
 		],
 		"patterns":
 		{
-			"BUG": "BUG[\\s]*?:+(?P<bug>.*)$"
+			"BUG": "BUG[\\s]*?:+(?P<bug>.*)$",
+			"MAYBE": "MAYBE[\\s]*?:+(?P<maybe>.*)$"
 		},
 		"result_title": "TODO Results"
 	},
+	"use_simple_full_screen": true,
 	"word_wrap": "true"
 }
