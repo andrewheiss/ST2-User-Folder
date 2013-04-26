@@ -14,5 +14,8 @@
 # Ignore Gist settings file, since it stores passwords in plain text (boo!)
 Gist.sublime-settings
 
-# Ignote SublimeREPL
+# Ignore SublimeREPL
 SublimeREPLHistory/
+
+# Ignore Package Control stuff
+Package Control.last-run

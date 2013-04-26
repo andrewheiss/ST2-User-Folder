@@ -1,14 +1,17 @@
 {
-	"auto_upgrade_last_run": 1348949055,
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"AAAPackageDev",
 		"Abacus",
 		"Alignment",
+		"All Autocomplete",
 		"Anypreter",
+		"ApacheConf.tmLanguage",
 		"Bullet",
 		"ColorPick",
 		"Default File Type",
+		"Enhanced R",
 		"FileDiffs",
 		"Gist",
 		"Git",
@@ -23,6 +26,8 @@
 		"ScopeHunter",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
+		"SublimePeek",
+		"SublimePeek-R-help",
 		"SublimeREPL",
 		"SublimeTODO",
 		"Theme - Soda",

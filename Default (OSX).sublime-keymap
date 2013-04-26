@@ -1,6 +1,9 @@
 [
 	{ "keys": ["ctrl+shift+backquote"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
 
+	// Kind of recreate TextMate's ctrl+shift+< command
+	{ "keys": ["ctrl+shift+,"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+
 	{ "keys": ["ctrl+shift+space"], "command": "auto_complete" },
 	{ "keys": ["ctrl+shift+space"], "command": "replace_completion_with_auto_complete", "context":
 		[
@@ -9,6 +12,11 @@
 			{ "key": "setting.tab_completion", "operator": "equal", "operand": true }
 		]
 	},
+
+	// Sidebar stuff
+	{ "keys": ["ctrl+t"], "command": "side_bar_new_file2" },
+	{ "keys": ["f2"], "command": "side_bar_rename" },
+	{ "keys": ["ctrl+alt+f"], "command": "side_bar_find_files_path_containing" },
 
 	// ---------
 	// R stuff
@@ -28,9 +36,12 @@
 			]
 	}, 
 	// Executes line(s) of text in REPL terminal *and* moves to the next line (because of the macro)
-	{ "keys": ["super+shift+r"], "command": "run_macro_file", "args": {"file": "Packages/User/R-send-command-move-next-line.sublime-macro"}, "context":
+	//{ "keys": ["super+shift+r"], "command": "run_macro_file", "args": {"file": "Packages/User/R-send-command-move-next-line.sublime-macro"}, "context":
+	{ "keys": ["super+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/R-send-command-move-next-line.sublime-macro"}, "context":
 			[
 				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
 			]
-	}
+	},
+	// Send selection to R.app using R Tools package
+	{ "keys": ["super+alt+enter"], "command": "send_selection" }
 ]
