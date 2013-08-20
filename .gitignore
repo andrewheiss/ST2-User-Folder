@@ -19,3 +19,4 @@ SublimeREPLHistory/
 
 # Ignore Package Control stuff
 Package Control.last-run
+*.system-ca-bundle
