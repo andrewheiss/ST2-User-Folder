@@ -37,11 +37,51 @@
 	}, 
 	// Executes line(s) of text in REPL terminal *and* moves to the next line (because of the macro)
 	//{ "keys": ["super+shift+r"], "command": "run_macro_file", "args": {"file": "Packages/User/R-send-command-move-next-line.sublime-macro"}, "context":
-	{ "keys": ["super+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/R-send-command-move-next-line.sublime-macro"}, "context":
+	{ "keys": ["super+alt+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/R-send-command-move-next-line.sublime-macro"}, "context":
 			[
 				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
 			]
 	},
 	// Send selection to R.app using R Tools package
-	{ "keys": ["super+alt+enter"], "command": "send_selection" }
+	{ "keys": ["super+enter"], "command": "send_selection" , "context":
+			[
+				{ "operand": "source.r", "operator": "equal", "match_all": true, "key": "selector" }
+			]
+	},
+
+	// Auto-pair backticks in Markdown
+	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`$0`"}, "context":
+	    [
+	        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	        { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|>|$)", "match_all": true },
+	        { "key": "preceding_text", "operator": "not_regex_contains", "operand": "[`a-zA-Z0-9`]$", "match_all": true },
+	        { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.backtick", "match_all": true },
+	        { "key": "selector", "operator": "equal", "operand": "text.html.markdown" }
+	    ]
+	},
+	{ "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`${0:$SELECTION}`"}, "context":
+	    [
+	        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	        { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+	        { "key": "selector", "operator": "equal", "operand": "text.html.markdown" }
+	    ]
+	},
+	{ "keys": ["`"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+	    [
+	        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	        { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^`", "match_all": true },
+	        { "key": "selector", "operator": "equal", "operand": "text.html.markdown" }
+	    ]
+	},
+	{ "keys": ["backspace"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Left Right.sublime-macro"}, "context":
+	    [
+	        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+	        { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+	        { "key": "preceding_text", "operator": "regex_contains", "operand": "`$", "match_all": true },
+	        { "key": "following_text", "operator": "regex_contains", "operand": "^`", "match_all": true },
+	        { "key": "selector", "operator": "equal", "operand": "text.html.markdown" }
+	    ]
+	}
 ]
