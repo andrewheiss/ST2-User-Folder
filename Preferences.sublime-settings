@@ -1,7 +1,5 @@
 {
-	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
+	"color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -28,23 +26,19 @@
 		"*.doc",
 		"*.xls"
 	],
+	"flatland_square_tabs": true,
 	"font_face": "Consolas",
 	"font_size": 13.0,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Default File Type",
-		"Git",
-		"MarkdownEditing",
-		"SublimeCodeIntel",
-		"Bullet",
-		"Vintage",
-		"ScopeHunter",
-		"Enhanced R"
+		"Vintage"
 	],
 	"show_full_path": true,
 	"soda_classic_tabs": true,
-	"theme": "Soda Dark.sublime-theme",
+	"tab_size": 2,
+	"table_editor_syntax": "Auto",
+	"theme": "Flatland Dark.sublime-theme",
 	"todo":
 	{
 		"case_sensitive": true,
@@ -67,6 +61,7 @@
 		},
 		"result_title": "TODO Results"
 	},
+	"translate_tabs_to_spaces": true,
 	"use_simple_full_screen": true,
 	"word_wrap": "true"
 }
