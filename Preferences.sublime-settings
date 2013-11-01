@@ -1,5 +1,6 @@
 {
-	"color_scheme": "Packages/Theme - Flatland/Flatland Monokai.tmTheme",
+	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"enable_live_count": false,
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -36,6 +37,7 @@
 	],
 	"show_full_path": true,
 	"soda_classic_tabs": true,
+	"sublimelinter": true,
 	"tab_size": 2,
 	"table_editor_syntax": "Auto",
 	"theme": "Flatland Dark.sublime-theme",

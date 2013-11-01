@@ -16,6 +16,7 @@ Gist.sublime-settings
 
 # Ignore SublimeREPL
 SublimeREPLHistory/
+.SublimeREPLHistory/
 
 # Ignore Package Control stuff
 Package Control.last-run

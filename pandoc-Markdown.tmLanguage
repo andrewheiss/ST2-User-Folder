@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>md</string>
+	</array>
+	<key>name</key>
+	<string>pandoc Markdown</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^(% .*)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.unquoted.multimarkdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^$|^(?=[A-Za-z0-9]+:)</string>
+			<key>name</key>
+			<string>meta.header.pandoc.knitr</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>comment</key>
+					<string>The reason for not setting scopeName = "string.unquoted" (for the parent rule) is that we do not want newlines to be marked as string.unquoted. 
+
+					Also, you can use title.meta.header.pandoc.knitr as a scope name for the beginCaptures section above for special title highlighting.</string>
+					<key>match</key>
+					<string>.+</string>
+					<key>name</key>
+					<string>string.unquoted.multimarkdown</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Import any other Markdown syntaxes.</string>
+			<key>include</key>
+			<string>text.html.markdown</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.html.markdown.knitr</string>
+	<key>uuid</key>
+	<string>d7f81047-b80c-4c82-923f-3be60764c9bb</string>
+</dict>
+</plist>

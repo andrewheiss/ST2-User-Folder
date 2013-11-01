@@ -2,16 +2,21 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"AAAPackageDev",
 		"Abacus",
 		"All Autocomplete",
 		"ApacheConf.tmLanguage",
+		"CheckBounce",
 		"EncodingHelper",
 		"Enhanced-R",
+		"ExportHtml",
 		"FileDiffs",
+		"GenerateUUID",
 		"Gist",
 		"GitHub.app Menu",
 		"knitr",
 		"LaTeXTools",
+		"MarkdownEditing",
 		"Package Control",
 		"rsub",
 		"ScopeHunter",
@@ -24,6 +29,7 @@
 		"Table Editor",
 		"Theme - Flatland",
 		"Theme - Soda",
-		"ToggleQuotes"
+		"ToggleQuotes",
+		"WordCount"
 	]
 }
